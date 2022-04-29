@@ -40,3 +40,4 @@ class Plugins:
     Tours = 'tours'
     VariableExplorer = 'variable_explorer'
     WorkingDirectory = 'workingdir'
+    Watchlist = 'watchlist'

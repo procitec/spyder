@@ -302,6 +302,7 @@ spyder_plugins_entry_points = [
     'tours = spyder.plugins.tours.plugin:Tours',
     'variable_explorer = spyder.plugins.variableexplorer.plugin:VariableExplorer',
     'workingdir = spyder.plugins.workingdirectory.plugin:WorkingDirectory',
+    'watchlist = spyder.plugins.watchlist.plugin:Watchlist',
 ]
 
 spyder_completions_entry_points = [
