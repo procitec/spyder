@@ -209,10 +209,12 @@ class TextHelper(object):
         line = min(line, self.line_count())
         text_cursor = self._move_cursor_to(line)
         if column:
-            text_cursor.movePosition(text_cursor.Right, text_cursor.MoveAnchor,
+            text_cursor.movePosition(QTextCursor.MoveOperation.Right,
+                                     QTextCursor.MoveMode.MoveAnchor,
                                      column)
         if end_column:
-            text_cursor.movePosition(text_cursor.Right, text_cursor.KeepAnchor,
+            text_cursor.movePosition(QTextCursor.MoveOperation.Right,
+                                     QTextCursor.MoveMode.KeepAnchor,
                                      end_column)
         if move:
             block = text_cursor.block()
